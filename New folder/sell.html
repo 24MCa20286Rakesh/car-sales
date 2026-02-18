@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car - CarMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="sell-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <h1>Car<span>Mart</span></h1>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            
+            <ul class="navbar-links" id="navbarLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell Car</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="sell-container">
+            <div class="sell-form-card">
+                <h2>Sell Your Car</h2>
+                <p class="subtitle">List your car in front of thousands of buyers</p>
+                
+                <form id="sellCarForm" novalidate>
+                    <!-- Car Name -->
+                    <div class="form-group">
+                        <label for="carName">Car Name <span class="required">*</span></label>
+                        <input type="text" id="carName" name="carName" 
+                               placeholder="e.g., Toyota Camry 2023" required>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="form-group">
+                        <label for="carPrice">Price (USD) <span class="required">*</span></label>
+                        <input type="number" id="carPrice" name="carPrice" 
+                               placeholder="e.g., 25000" min="0" step="100" required>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="form-group">
+                        <label for="carLocation">Location <span class="required">*</span></label>
+                        <input type="text" id="carLocation" name="carLocation" 
+                               placeholder="e.g., New York, NY" required>
+                    </div>
+
+                    <!-- Year -->
+                    <div class="form-group">
+                        <label for="carYear">Year</label>
+                        <input type="text" id="carYear" name="carYear" 
+                               placeholder="e.g., 2023">
+                    </div>
+
+                    <!-- Mileage -->
+                    <div class="form-group">
+                        <label for="carMileage">Mileage</label>
+                        <input type="text" id="carMileage" name="carMileage" 
+                               placeholder="e.g., 15,000 miles">
+                    </div>
+
+                    <!-- Fuel Type -->
+                    <div class="form-group">
+                        <label for="carFuel">Fuel Type</label>
+                        <input type="text" id="carFuel" name="carFuel" 
+                               placeholder="e.g., Petrol, Electric, Diesel">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label for="carDescription">Description <span class="required">*</span></label>
+                        <textarea id="carDescription" name="carDescription" 
+                                  placeholder="Describe your car's condition, features, and any additional details..." 
+                                  required></textarea>
+                    </div>
+
+                    <!-- Image URL -->
+                    <div class="form-group">
+                        <label for="carImage">Image URL</label>
+                        <input type="url" id="carImage" name="carImage" 
+                               placeholder="https://example.com/car-image.jpg">
+                        <span class="help-text">Enter a direct link to your car image. Leave empty to use a placeholder.</span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">List My Car</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About CarMart</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CarMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
