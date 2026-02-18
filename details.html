@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - CarMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="details-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <h1>Car<span>Mart</span></h1>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            
+            <ul class="navbar-links" id="navbarLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell Car</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <a href="index.html" class="back-link">← Back to Listings</a>
+        
+        <div class="details-card">
+            <div class="details-grid">
+                <!-- Car Image -->
+                <div class="details-image">
+                    <img id="carImage" src="" alt="Car Image">
+                </div>
+                
+                <!-- Car Details -->
+                <div class="details-content">
+                    <div class="details-price" id="carPrice">$0</div>
+                    <h1 class="details-title" id="carName">Loading...</h1>
+                    
+                    <!-- Car Info -->
+                    <div class="details-info">
+                        <div class="details-info-item">
+                            <span class="details-info-label">Year</span>
+                            <span class="details-info-value" id="carYear">-</span>
+                        </div>
+                        <div class="details-info-item">
+                            <span class="details-info-label">Mileage</span>
+                            <span class="details-info-value" id="carMileage">-</span>
+                        </div>
+                        <div class="details-info-item">
+                            <span class="details-info-label">Fuel Type</span>
+                            <span class="details-info-value" id="carFuel">-</span>
+                        </div>
+                        <div class="details-info-item">
+                            <span class="details-info-label">Price</span>
+                            <span class="details-info-value" id="carPriceInfo">-</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="details-description">
+                        <h4>Description</h4>
+                        <p id="carDescription">Loading...</p>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="details-location" id="carLocation">
+                        📍 Loading...
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="details-actions">
+                        <a href="#" class="btn-primary">Contact Seller</a>
+                        <a href="index.html" class="btn-secondary">Browse More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About CarMart</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CarMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
